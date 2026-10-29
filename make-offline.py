@@ -7,7 +7,7 @@ project = Path(__file__).parent
 dist = project / 'dist'
 html = (dist / 'index.html').read_text(encoding='utf-8')
 js = next((dist / 'assets').glob('index-*.js')).read_text(encoding='utf-8')
-js = js.replace('/assets/', './assets/').replace('</script>', '<\\/script>')
+js = js.replace('</script>', '<\\/script>')
 css = next((dist / 'assets').glob('index-*.css')).read_text(encoding='utf-8')
 html = re.sub(r'<script[^>]*src=[^>]*></script>', lambda m: '<script type="module">' + js + '</script>', html)
 html = re.sub(r'<link[^>]*rel="stylesheet"[^>]*>', lambda m: '<style>' + css + '</style>', html)
