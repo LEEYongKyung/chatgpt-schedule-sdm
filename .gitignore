@@ -3,3 +3,4 @@ dist/
 .sites-cache/
 qa/
 *.zip
+offline/
