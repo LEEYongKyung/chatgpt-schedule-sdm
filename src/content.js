@@ -1,4 +1,4 @@
-export const chapters=['시작','예약의 이해','행정 활용','설정 시연','결과 확인','직접 설계','운영 관리','마무리'];
+export const chapters=['시작','예약의 이해','행정 활용','설정 시연','결과 확인','직접 설계','마무리'];
 export const sources=[
  ['대한민국 정책브리핑','중앙부처의 정책·보도자료','https://www.korea.kr/briefing/pressReleaseList.do'],
  ['서울시 보도자료','서울시 정책·사업 발표','https://www.seoul.go.kr/news/news_report.do'],
